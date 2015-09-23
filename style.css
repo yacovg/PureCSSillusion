@@ -1,0 +1,81 @@
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+}
+.circle {
+    width: 320px;
+    height: 320px;
+    border-radius: 320px;
+    background: #000000;
+}
+.ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: white;
+    margin-top: -8px;
+    animation: move 2s infinite;
+    animation-timing-function: ease-in-out;
+}
+.line {
+    width: 320px;
+    height: 3px;
+    /*background: #333333;*/
+}
+.rotate1 {
+    transform: rotate(0deg);
+}
+.rotate1 .ball {
+    animation-delay: 0.875s;
+}
+.rotate2 {
+    transform: rotate(22.5deg);
+}
+.rotate2 .ball {
+    animation-delay: 0.75s;
+}
+.rotate3 {
+    transform: rotate(45deg);
+}
+.rotate3 .ball {
+    animation-delay: 0.625s;
+}
+.rotate4 {
+    transform: rotate(67.5deg);
+}
+.rotate4 .ball {
+    animation-delay: 0.5s;
+}
+.rotate5 {
+    transform: rotate(90deg);
+}
+.rotate5 .ball {
+    animation-delay: 0.375s;
+}
+.rotate6 {
+    transform: rotate(112.5deg);
+}
+.rotate6 .ball {
+    animation-delay: 0.25s;
+}
+.rotate7 {
+    transform: rotate(135deg);
+}
+.rotate7 .ball {
+    animation-delay: 0.125s;
+}
+.rotate8 {
+    transform: rotate(157.5deg);
+}
+.rotate8 .ball {
+    animation-delay: 0s;
+}
+@keyframes move {
+    50% {
+        transform: translateX(300px);
+    }
+}
